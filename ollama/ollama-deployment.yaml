@@ -21,13 +21,6 @@ spec:
           imagePullPolicy: Always
           ports:
             - containerPort: 11434
-          resources:
-            requests:
-              cpu: "500m"
-              memory: "1Gi"
-            limits:
-              cpu: "2"
-              memory: "8Gi"
           volumeMounts:
             - name: ollama-data
               mountPath: /root/.ollama
@@ -36,13 +29,6 @@ spec:
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
-          resources:
-            requests:
-              cpu: "10m"
-              memory: "256Mi"
-            limits:
-              cpu: "20m"
-              memory: "256Mi"
           volumeMounts:
             - name: open-webui-data
               mountPath: /app/backend/data
