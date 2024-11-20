@@ -29,6 +29,9 @@ spec:
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
+          env:
+            - name: OLLAMA_BASE_URL
+              value: http://localhost:11434
           volumeMounts:
             - name: open-webui-data
               mountPath: /app/backend/data
