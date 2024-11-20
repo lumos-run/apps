@@ -35,3 +35,15 @@ spec:
         - name: ollama-data
           persistentVolumeClaim:
             claimName: ollama-data
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  namespace: paperdebugger
+  name: ollama-data
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 64Gi
