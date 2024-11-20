@@ -39,7 +39,6 @@ spec:
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  namespace: paperdebugger
   name: ollama-data
 spec:
   accessModes:
