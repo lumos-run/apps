@@ -32,7 +32,7 @@ spec:
             - name: ollama-data
               mountPath: /root/.ollama
         - name: open-webui
-          image: ghcr.io/ollama/open-webui:main
+          image: ghcr.io/open-webui/open-webui:main
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
