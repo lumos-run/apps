@@ -9,8 +9,10 @@ spec:
   type: ClusterIP
   ports:
     - protocol: TCP
+      name: ollama-api
       port: 11434
       targetPort: 11434
     - protocol: TCP
+      name: ollama-webui
       port: 8080
       targetPort: 8080
